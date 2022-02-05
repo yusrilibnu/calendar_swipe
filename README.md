@@ -1,3 +1,3 @@
 # calendar_swipe
 
-ini by yusrilibnu
+init by yusrilibnu
