@@ -223,40 +223,18 @@ body{
 
 .thumbnails > div {
 	position: fixed;
-	bottom: 0;
+	top:unset;
+	bottom: 20px;
 	left: 0;
 	width: 100%;
 	z-index: 999;
 	margin: auto auto;
-	padding-left: 8%;
-    padding-right: 8%;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 .thumbnails ul {
-    margin: 0;
-    display: inline;
-}
-.thumbnails img {
-    float: left;
-    width: 40px;
-    height: auto;
-}
-@media screen and (min-width: 790px) {
-	.thumbnails > div {
-		width: 36px;
-		height: 100vh;
-		margin: auto auto;
-		position: fixed;
-		left: 15px;
-		top: calc(105vh - 882px);
-		padding: 0;
-	}
-	.thumbnails ul {
-		display: block;
-	}
-	.thumbnails img{
-		float:left;
-		width: 96px;
-	}
+	margin: 0;
+	display: inline;
 }
 
 .thumbnails ul{
@@ -273,6 +251,104 @@ body{
 	-ms-transition:-ms-transform ease-in-out 100ms;
 	-o-transition:-o-transform ease-in-out 100ms;
 	transition:transform ease-in-out 100ms;
+}
+
+
+@media only screen and (orientation: landscape) and (min-height: 20px) {
+	.thumbnails > div {
+		display: none;
+		visibility: none;
+	}
+
+}
+@media only screen and (orientation: landscape) and (min-height: 500px) {
+	.thumbnails > div {
+		position: fixed;
+		top: calc(188vh - 882px);
+		bottom: unset;
+		left: 15px;
+		width: 36px;
+		height: 100vh;
+		margin: auto auto;
+		padding: 0;
+		display: block;
+		visibility: visible;
+	}
+	.thumbnails img {
+		float: left;
+		width: 40px;
+		height: auto;
+	}
+}
+@media only screen and (orientation: landscape) and (min-height: 564px) {
+	.thumbnails > div {
+		position: fixed;
+		top: calc(158vh - 882px);
+		bottom: unset;
+		left: 15px;
+		width: 36px;
+		height: 100vh;
+		margin: auto auto;
+		padding: 0;
+		display: block;
+		visibility: visible;
+	}
+	.thumbnails img {
+		float: left;
+		width: 40px;
+		height: auto;
+	}
+}
+@media only screen and (orientation: landscape) and (min-height: 650px) {
+	.thumbnails > div {
+		position: fixed;
+		top: calc(138vh - 882px);
+		bottom: unset;
+		left: 15px;
+		width: 36px;
+		height: 100vh;
+		margin: auto auto;
+		padding: 0;
+	}
+}
+@media only screen and (orientation: landscape) and (min-height: 765px) {
+	.thumbnails > div {
+		position: fixed;
+		top: calc(118vh - 882px);
+		bottom: unset;
+		left: 15px;
+		width: 36px;
+		height: 100vh;
+		margin: auto auto;
+		padding: 0;
+	}
+	.thumbnails img {
+		float: left;
+		width: 60px;
+		height: auto;
+	}
+}
+
+@media only screen and (orientation: landscape) and (min-height: 950px) {
+	.thumbnails > div {
+		position: fixed;
+		top: calc(94vh - 882px);
+		bottom: unset;
+		left: 15px;
+		width: 36px;
+		height: 100vh;
+		margin: auto auto;
+		padding: 0;
+	}
+	.thumbnails ul {
+		margin: 0;
+		display: block;
+	}
+	.thumbnails img{
+		float:left;
+		width: 96px;
+		height: auto;
+	}
 }
 
 .thumbanils-touch ul{
