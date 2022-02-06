@@ -1,13 +1,20 @@
 <!doctype html>
 <html>
 <head>
-<title>Kalender Project</title>
+<title>STIEI MALANG Kalender 2022</title>
+<meta name="title" content="STIEI Malang Kalender 2022">
+<meta name="description" content="Kalender Digital Indonesia Tahun 2022 dari STIEI Malang. Lihat tanggal-tanggal penting pada kalender dan dapatkan informasi hari raya dan hari libur.">
+<meta name="keywords" content="kalender,ekalender,digital,STIEI,Malang">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="author" content="STIEI Malang">
 <script type="text/javascript" src="js/jquery.min.1.7.js"></script>
 <script type="text/javascript" src="js/modernizr.2.5.3.min.js"></script>
 <script type="text/javascript" src="js/hash.js"></script>
-<style>
-	
-</style>
+<link rel="icon" href="https://www.stieimlg.ac.id/wp-content/uploads/2021/12/cropped-Untitled-design-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.stieimlg.ac.id/wp-content/uploads/2021/12/cropped-Untitled-design-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.stieimlg.ac.id/wp-content/uploads/2021/12/cropped-Untitled-design-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.stieimlg.ac.id/wp-content/uploads/2021/12/cropped-Untitled-design-270x270.png" />
 </head>
 <body>
 
@@ -31,32 +38,36 @@
 	<div>
 		<ul>
 			<li class="i">
-				<img src="pages/1-thumb.jpg" width="76" height="100" class="page-1">
+				<img src="pages/1-thumb.jpg" width="96" height="100" class="page-1">
 				<span>1</span>
 			</li>
 			<li class="i">
-				<img src="pages/2-thumb.jpg" width="76" height="100" class="page-2">
+				<img src="pages/2-thumb.jpg" width="96" height="100" class="page-2">
 				<span>2</span>
 			</li>
 			<li class="i">
-				<img src="pages/3-thumb.jpg" width="76" height="100" class="page-3">
+				<img src="pages/3-thumb.jpg" width="96" height="100" class="page-3">
 				<span>3</span>
 			</li>
 			<li class="i">
-				<img src="pages/4-thumb.jpg" width="76" height="100" class="page-4">
+				<img src="pages/4-thumb.jpg" width="96" height="100" class="page-4">
 				<span>4</span>
 			</li>
 			<li class="i">
-				<img src="pages/5-thumb.jpg" width="76" height="100" class="page-5">
+				<img src="pages/5-thumb.jpg" width="96" height="100" class="page-5">
 				<span>5</span>
 			</li>
 			<li class="i">
-				<img src="pages/6-thumb.jpg" width="76" height="100" class="page-6">
+				<img src="pages/6-thumb.jpg" width="96" height="100" class="page-6">
 				<span>6</span>
 			</li>
 			<li class="i">
-				<img src="pages/7-thumb.jpg" width="76" height="100" class="page-7">
+				<img src="pages/7-thumb.jpg" width="96" height="100" class="page-7">
 				<span>7</span>
+			</li>
+			<li class="i">
+				<img src="pages/8-thumb.jpg" width="96" height="100" class="page-8">
+				<span>8</span>
 			</li>
 		<ul>
 	<div>	
@@ -89,41 +100,32 @@ function loadApp() {
 	flipbook.turn({
 			
 			// Magazine width
-
-			width: 542,
+			width: 742,
 
 			// Magazine height
-
-			height: 542,
+			height: 742,
 
 			// Duration in millisecond
-
 			duration: 1000,
 
 			// Hardware acceleration
-
 			acceleration: !isChrome(),
 
 			// Enables gradients
-
 			gradients: true,
 			
 			// Auto center this flipbook
-
 			autoCenter: true,
 
 			// Elevation from the edge of the flipbook when turning a page
-
 			elevation: 50,
 
 			// The number of pages
-
-			pages: 12,
+			pages: 8,
 
 			display: 'single',
 
 			// Events
-
 			when: {
 				turning: function(event, page, view) {
 					
@@ -147,9 +149,6 @@ function loadApp() {
 					$('.thumbnails .page-'+page).
 						parent().
 						addClass('current');
-
-
-
 				},
 
 				turned: function(event, page, view) {
@@ -362,7 +361,6 @@ function loadApp() {
 
 
 	// Regions
-
 	if ($.isTouch) {
 		$('.magazine').bind('touchstart', regionClick);
 	} else {
