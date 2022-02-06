@@ -224,7 +224,7 @@ body{
 .thumbnails > div {
 	position: fixed;
 	top:unset;
-	bottom: 20px;
+	bottom: 86px;
 	left: 0;
 	width: 100%;
 	z-index: 999;
