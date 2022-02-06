@@ -384,7 +384,10 @@ body{
 }
 
 .thumbnails li span{
-	display:none;
+	display: none;
+    background: #fff;
+    padding: 1px;
+    border-radius: 10px;
 }
 
 .thumbnails .current{
